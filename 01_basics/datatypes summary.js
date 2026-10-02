@@ -31,3 +31,20 @@ const myFunction = function() {
 }
 console.log(typeof heros, typeof myobject, typeof myFunction)
 console.log(id, anotherId)
+//memory
+//types 2: Stack(primitive), Heap(reference/non-primitive)
+let myyoutubeName = "Boddireddy Vaishnavi Reddy"
+let anotherYoutubeName = myyoutubeName
+myyoutubeName = "Boddireddy Vaishnavi"
+console.log(myyoutubeName, anotherYoutubeName)
+let userOne = {
+    name: "vaishnavi",
+    age: 20,
+    isLoggedIn: true,
+    email: "vaishnavi@example.com"
+}
+let anotherUser = userOne
+anotherUser.isLoggedIn = false
+anotherUser.email = "vaishnavi123@example.com"
+console.log(userOne.isLoggedIn, anotherUser.isLoggedIn)
+console.log(userOne.email, anotherUser.email)
